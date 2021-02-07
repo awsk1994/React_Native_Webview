@@ -23,12 +23,22 @@ import {
   DebugInstructions,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
+import { WebView } from 'react-native-webview';
+
 
 const App: () => React$Node = () => {
   return (
     <>
       <StatusBar barStyle="dark-content" />
       <SafeAreaView>
+      <View style={{height: 400}}>
+              <Text>Hello</Text>
+              <WebView
+            source={{ uri: 'https://infinite.red' }}
+            style={{width: '100%', height: '100%'}}
+
+              />
+          </View>
         <ScrollView
           contentInsetAdjustmentBehavior="automatic"
           style={styles.scrollView}>
@@ -38,7 +48,9 @@ const App: () => React$Node = () => {
               <Text style={styles.footer}>Engine: Hermes</Text>
             </View>
           )}
+
           <View style={styles.body}>
+
             <View style={styles.sectionContainer}>
               <Text style={styles.sectionTitle}>Step One</Text>
               <Text style={styles.sectionDescription}>
