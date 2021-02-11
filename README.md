@@ -1,7 +1,5 @@
 # React Native Webview Example
 
-TODO: Get it to work on ios
-
 ## Library Used
  - https://github.com/awsk1994/React_Native_Webview_Example
 
@@ -17,8 +15,6 @@ TODO: Get it to work on ios
 ```
 
 <img src="./img/example.jpg" height="300px"/>
-
-
 
 ### Solution to Flipper-Folly problem
 
